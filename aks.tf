@@ -1,7 +1,7 @@
 resource "azurerm_kubernetes_cluster" "cluster" {
   name                = "rakscluster123"
-  location            = "westeurope"
-  resource_group_name = azurerm_resource_group.vmss.name
+  location            = "westus"
+  resource_group_name = azurerm_resource_group.aks.name
   dns_prefix          = "aksrakshith-cluster"
 
   default_node_pool {
